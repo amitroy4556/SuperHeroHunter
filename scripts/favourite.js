@@ -13,7 +13,7 @@ if (favList.length === 0)
 
 //Rendering Superhero Cards using id's from localStorage
 for (let id of favList) {
-    fetch('https://superheroapi.com/api.php/1953802511419258/' + id + '/image')
+    fetch('https://superheroapi.com/api.php/4242177812563148/' + id + '/image')
         .then(res => res.json())
         .then(data => createCard(data, id))
         .catch(err => console.log(err))
